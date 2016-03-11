@@ -156,6 +156,13 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /*
+         * Plugins
+         */
+        Way\Generators\GeneratorsServiceProvider::class,
+        Xethron\MigrationsGenerator\MigrationsGeneratorServiceProvider::class,
+
+        Barryvdh\Debugbar\ServiceProvider::class,
     ],
 
     /*
@@ -202,6 +209,10 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
 
+        /*
+         * Plugins
+         */
+        'Debugbar' => Barryvdh\Debugbar\Facade::class,
     ],
 
 ];
