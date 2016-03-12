@@ -144,7 +144,7 @@ return [
         Illuminate\Redis\RedisServiceProvider::class,
         Illuminate\Auth\Passwords\PasswordResetServiceProvider::class,
         Illuminate\Session\SessionServiceProvider::class,
-        Illuminate\Translation\TranslationServiceProvider::class,
+//        Illuminate\Translation\TranslationServiceProvider::class, // Replaced with other package
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
 
@@ -163,6 +163,9 @@ return [
         Xethron\MigrationsGenerator\MigrationsGeneratorServiceProvider::class,
 
         Barryvdh\Debugbar\ServiceProvider::class,
+
+        Hpolthof\Translation\ServiceProvider::class,
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
     ],
 
     /*

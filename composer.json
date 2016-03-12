@@ -7,16 +7,21 @@
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "5.2.*",
-        "barryvdh/laravel-debugbar": "^2.2"
+        "barryvdh/laravel-debugbar": "^2.2",
+        "fzaninotto/faker": "^1.5",
+        "laracasts/testdummy": "^2.3",
+        "barryvdh/laravel-ide-helper": "^2.1",
+        "doctrine/dbal": "^2.5"
     },
     "require-dev": {
-        "fzaninotto/faker": "~1.4",
         "mockery/mockery": "0.9.*",
         "phpunit/phpunit": "~4.0",
         "symfony/css-selector": "2.8.*|3.0.*",
         "symfony/dom-crawler": "2.8.*|3.0.*",
         "xethron/migrations-generator": "dev-l5",
-        "way/generators": "dev-feature/laravel-five-stable"
+        "way/generators": "dev-feature/laravel-five-stable",
+        "laracasts/generators": "^1.1",
+        "hpolthof/laravel-translations-db": "^0.4.4"
     },
     "autoload": {
         "classmap": [
@@ -33,7 +38,9 @@
     },
     "scripts": {
         "post-root-package-install": [
-            "php -r \"copy('.env.example', '.env');\""
+            "php -r \"copy('.env.example', '.env');\"",
+            "php artisan migrate",
+            "php artisan db:seed"
         ],
         "post-create-project-cmd": [
             "php artisan key:generate"
@@ -46,6 +53,10 @@
             "php artisan clear-compiled"
         ],
         "post-update-cmd": [
+            "php artisan clear-compiled",
+            "php artisan ide-helper:generate -W",
+            "php artisan ide-helper:models -W",
+            "php artisan ide-helper:meta -W",
             "php artisan optimize"
         ]
     },
