@@ -1,5 +1,6 @@
 # Lissted all used packages
 1. [Translation package](https://github.com/hpolthof/laravel-translations-db)
+1. [Bower dependencies](https://github.com/FabioAntunes/laravel-elixir-wiredep)
 
 # Database tables
 1. Create table

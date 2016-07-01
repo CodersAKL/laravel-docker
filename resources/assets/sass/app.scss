@@ -1,2 +1,8 @@
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+// bower:scss
+@import "../../../public/assets/vendor/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
 
+body {
+	background: linear-gradient(#eee, #ddd);
+	border-radius: 5px;
+}

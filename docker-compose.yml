@@ -1,0 +1,43 @@
+nginx:
+    container_name: mm
+    build: docker/nginx
+    volumes_from:
+        - php-fpm
+    volumes:
+        - ./docker/nginx/logs:/var/log/nginx
+    ports:
+        - "80:80"
+        - "443:443"
+        - "3000:3000"
+        - "3001:3001"
+    links:
+        - php-fpm
+
+php-fpm:
+    container_name: mm_php
+    build: docker/php-fpm
+    volumes:
+        - .:/var/www/laravel
+    expose:
+        - "9000"
+    links:
+        - mysql
+    user: www-data
+
+mysql:
+    container_name: mm_db
+    image: mysql:5.6
+    volumes:
+        - ./docker/data/mysql:/var/lib/mysql
+        - .:/var/www/laravel
+    ports:
+        - "3306:3306"
+    environment:
+        MYSQL_DATABASE: homestead
+        MYSQL_USER: homestead
+        MYSQL_PASSWORD: secret
+        MYSQL_ROOT_PASSWORD: root
+
+mailcatcher:
+    container_name: mm_mail
+    image: helder/mailcatcher

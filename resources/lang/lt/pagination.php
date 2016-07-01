@@ -3,6 +3,6 @@
 // File: lang/lt/pagination.php
 // Date: 2016-03-12 21:48:08
 return array(
-    'previous' => '&laquo; ankstesnis',
+    'previous' => '&laquo; Ankstesnis',
     'next'     => 'Kitas &raquo;',
 );
