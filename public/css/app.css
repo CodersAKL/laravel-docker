@@ -5733,8 +5733,4 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-body {
-  background: linear-gradient(#eee, #ddd);
-  border-radius: 5px; }
-
 /*# sourceMappingURL=app.css.map */

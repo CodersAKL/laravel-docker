@@ -12,7 +12,8 @@
         "laracasts/testdummy": "^2.3",
         "barryvdh/laravel-ide-helper": "^2.1",
         "doctrine/dbal": "^2.5",
-        "hpolthof/laravel-translations-db": "^0.4.4"
+        "hpolthof/laravel-translations-db": "^0.4.4",
+        "stichoza/google-translate-php": "^3.2"
     },
     "require-dev": {
         "mockery/mockery": "0.9.*",
@@ -54,9 +55,9 @@
         ],
         "post-update-cmd": [
             "php artisan clear-compiled",
-            "php artisan ide-helper:generate -W",
-            "php artisan ide-helper:models -W",
-            "php artisan ide-helper:meta -W",
+            "php artisan ide-helper:generate",
+            "php artisan ide-helper:models",
+            "php artisan ide-helper:meta",
             "php artisan optimize"
         ]
     },
