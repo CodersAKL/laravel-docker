@@ -7,6 +7,12 @@
     "laravel-elixir": "^5.0.0",
     "laravel-elixir-useref": "^1.2.1",
     "laravel-elixir-wiredep": "^2.1.0",
-    "useref": "^1.2.0"
-  }
+    "useref": "^1.2.0",
+    "snyk": "^1.83.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
