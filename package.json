@@ -8,7 +8,7 @@
     "laravel-elixir-useref": "^1.2.1",
     "laravel-elixir-wiredep": "^2.1.0",
     "useref": "^1.2.0",
-    "snyk": "^1.88.0"
+    "snyk": "^1.105.0"
   },
   "scripts": {
     "snyk-protect": "snyk protect",

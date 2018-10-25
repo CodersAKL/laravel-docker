@@ -8,3 +8,26 @@ patch:
         patched: '2018-07-03T03:32:26.289Z'
     - laravel-elixir > browser-sync > easy-extender > lodash:
         patched: '2018-07-03T03:32:26.289Z'
+  'npm:minimatch:20160620':
+    - laravel-elixir-useref > gulp-useref > vinyl-fs > glob-stream > glob > minimatch:
+        patched: '2018-10-25T04:22:50.865Z'
+    - laravel-elixir > browserify > glob > minimatch:
+        patched: '2018-10-25T04:22:50.865Z'
+    - laravel-elixir-useref > gulp-load-plugins > multimatch > minimatch:
+        patched: '2018-10-25T04:22:50.865Z'
+    - laravel-elixir-useref > gulp-load-plugins > findup-sync > glob > minimatch:
+        patched: '2018-10-25T04:22:50.865Z'
+    - laravel-elixir-useref > gulp-useref > vinyl-fs > glob-stream > minimatch:
+        patched: '2018-10-25T04:22:50.865Z'
+    - laravel-elixir-wiredep > wiredep > glob > minimatch:
+        patched: '2018-10-25T04:22:50.865Z'
+    - laravel-elixir > gulp-if > gulp-match > minimatch:
+        patched: '2018-10-25T04:22:50.865Z'
+    - laravel-elixir-useref > gulp-if > gulp-match > minimatch:
+        patched: '2018-10-25T04:22:50.865Z'
+    - laravel-elixir-useref > gulp-useref > gulp-if > gulp-match > minimatch:
+        patched: '2018-10-25T04:22:50.865Z'
+    - laravel-elixir-useref > gulp-useref > vinyl-fs > glob-watcher > gaze > globule > minimatch:
+        patched: '2018-10-25T04:22:50.865Z'
+    - laravel-elixir-useref > gulp-useref > vinyl-fs > glob-watcher > gaze > globule > glob > minimatch:
+        patched: '2018-10-25T04:22:50.865Z'
