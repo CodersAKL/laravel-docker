@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.12.0
+version: v1.13.1
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -8,3 +8,35 @@ patch:
         patched: '2018-07-03T03:32:26.289Z'
     - laravel-elixir > browser-sync > easy-extender > lodash:
         patched: '2018-07-03T03:32:26.289Z'
+  'npm:hoek:20180212':
+    - laravel-elixir > gulp-less > less > request > hawk > hoek:
+        patched: '2018-11-22T04:38:26.776Z'
+    - laravel-elixir > gulp-less > less > request > hawk > sntp > hoek:
+        patched: '2018-11-22T04:38:26.776Z'
+    - laravel-elixir > gulp-less > less > request > hawk > cryptiles > boom > hoek:
+        patched: '2018-11-22T04:38:26.776Z'
+    - laravel-elixir > gulp-less > less > request > hawk > boom > hoek:
+        patched: '2018-11-22T04:38:26.776Z'
+  'npm:minimatch:20160620':
+    - laravel-elixir > gulp-if > gulp-match > minimatch:
+        patched: '2018-11-22T04:38:26.776Z'
+    - laravel-elixir-wiredep > wiredep > glob > minimatch:
+        patched: '2018-11-22T04:38:26.776Z'
+    - laravel-elixir-useref > gulp-load-plugins > findup-sync > glob > minimatch:
+        patched: '2018-11-22T04:38:26.776Z'
+    - laravel-elixir > browserify > glob > minimatch:
+        patched: '2018-11-22T04:38:26.776Z'
+    - laravel-elixir-useref > gulp-useref > vinyl-fs > glob-stream > glob > minimatch:
+        patched: '2018-11-22T04:38:26.776Z'
+    - laravel-elixir-useref > gulp-load-plugins > multimatch > minimatch:
+        patched: '2018-11-22T04:38:26.776Z'
+    - laravel-elixir-useref > gulp-if > gulp-match > minimatch:
+        patched: '2018-11-22T04:38:26.776Z'
+    - laravel-elixir-useref > gulp-useref > gulp-if > gulp-match > minimatch:
+        patched: '2018-11-22T04:38:26.776Z'
+    - laravel-elixir-useref > gulp-useref > vinyl-fs > glob-watcher > gaze > globule > minimatch:
+        patched: '2018-11-22T04:38:26.776Z'
+    - laravel-elixir-useref > gulp-useref > vinyl-fs > glob-watcher > gaze > globule > glob > minimatch:
+        patched: '2018-11-22T04:38:26.776Z'
+    - laravel-elixir-useref > gulp-useref > vinyl-fs > glob-stream > minimatch:
+        patched: '2018-11-22T04:38:26.776Z'
