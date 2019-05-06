@@ -8,11 +8,12 @@
     "laravel-elixir-useref": "^1.2.1",
     "laravel-elixir-wiredep": "^2.1.0",
     "useref": "^1.2.0",
-    "snyk": "^1.110.1"
+    "snyk": "^1.161.1"
   },
   "scripts": {
     "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect"
+    "prepare": "npm run snyk-protect",
+    "prepublish": "npm run snyk-protect"
   },
   "snyk": true
 }
